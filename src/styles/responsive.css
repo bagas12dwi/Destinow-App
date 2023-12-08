@@ -1,0 +1,71 @@
+/* Laptop */
+@media (max-width: 1200px) {
+    .header {
+      padding: 8px 32px;
+    }
+    .hero__image {
+        width: 40%;
+        margin-bottom: 20px;
+      }
+  }
+
+  
+  /* Tablet */
+  @media (max-width: 768px) {
+    html {
+      font-size: 62.5%;
+    }
+  
+    #menu {
+      display: inline-block;
+    }
+  
+    .header .navigasi {
+      position: absolute;
+      top: 100%;
+      right: 100%;
+      background-color: var(--li);
+      width: 35rem;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .header .navigasi .nav_daftar{
+        flex-direction: column;
+    }
+
+    .header .navigasi.open {
+        right: 0; /* Buka drawer ketika dibuka */
+      }
+
+    .hero {
+    flex-direction: column; 
+    }
+
+    .hero__image {
+    width: 70%; 
+    margin: 0 auto;
+    }
+
+    .hero__content {
+    text-align: center;
+    margin: 20px; 
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+
+    .hero__image {
+        width: 90%; 
+        margin: 0 auto; 
+      }
+    
+      .hero__content {
+        text-align: center;
+        margin: 20px; 
+      }
+  }

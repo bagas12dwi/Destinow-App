@@ -1,0 +1,264 @@
+:root {
+  --primary: #F0ECE5;
+  --bg: white;
+  --li: #FFF5C2;
+  --footer:#161A30;
+  --hover: #F12121 ; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: black;
+}
+
+/* navbar */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  position: relative;
+}
+
+.header .logo {
+  width: 70px;
+}
+
+.header .navigasi .nav_daftar {
+  list-style: none;
+  display: flex;
+  background-color: var(--li); /* Set the background color here */
+  border-radius: 15px; /* Add border-radius to round the corners */
+
+}
+
+.header .navigasi a {
+  color: black;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px; /* Add padding to create space around the links */
+}
+
+.header .navigasi a:hover {
+  color: var(--hover);
+}
+
+.header .navigasi a.active {
+  color: #F12121;
+}
+
+.header .navigasi a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #F12121;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.header .navigasi a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.header .navbar-extra a {
+  color: var(--footer);
+  margin: 0 0.5rem;
+}
+
+.header .navbar-extra a:hover {
+  color: black;
+}
+
+#search {
+  margin-right: 30px; /* Menambahkan margin kanan pada elemen pencarian */
+}
+
+#menu {
+  display: none;
+}
+
+.header .navigasi.open {
+  left: 0;
+  height: 30px;
+}
+
+.header .navigasi ul li {
+  margin-bottom: 5px;
+}
+
+.header .navigasi ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+.header .navigasi ul li a:hover {
+  color: #F12121;
+}
+
+.header .navigasi ul li.active a {
+  color: #F12121;
+}
+
+
+
+/* hero */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero__image {
+  width: 30%; 
+  height: auto;
+  object-fit: cover;
+  margin-right: 20px;
+  margin-left: 20px;
+
+}
+
+.hero__content {
+  flex: 1;
+  color: black; 
+  text-align: center;
+  margin-left: 20px;
+  
+}
+
+.hero__title {
+  font-family: "laila", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.hero__tagline {
+  font-family: "laila", serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+/* main */
+main {
+  min-height: calc(100vh - 100px);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.list {
+  padding: 32px;
+  font-size: 18px;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--footer);
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  max-width: 100%;
+  gap: 20px;
+  padding: 50px 20px;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.container h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.socials {
+  height: 100%;
+  inset-block: 0;
+  inset-inline-end: 0;
+  background-color: var(--primary);
+  margin-left: 100px;
+
+}
+
+.socials a {
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  display: flex;  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.socials a:hover {
+  color: var(--hover);
+}
+
+.customer-services {
+  flex-grow: 1;
+  flex-basis: 100%;
+  line-height: 1.9;
+  margin-right: 100px;
+}
+
+.contact {
+  padding-top: 20px;
+}
+
+.our-services {
+  flex-basis: 100%;
+  line-height: 2.3;
+  margin-left: 100px;
+}
+
+
+.copyright {
+  padding: 15px 0;
+  border-top: 1px solid;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-to-content:focus {
+  top: 0;
+}
