@@ -30,7 +30,7 @@ const AboutUs = {
               <div class="row g-3 justify-content-center">
                 <div class="col-lg-4 col-md-4 col-sm-2 d-flex justify-content-center">
                   <div class="card" style="width: 18rem;">
-                    <img src="/images/bagas.jpg" class="tim-image card-img-top" alt="tim image">
+                    <img src="bagas.jpg" class="tim-image card-img-top" alt="tim image">
                     <div class="card-body text-center">
                       <h6 class="fw-bold">Bagas Dwi Sulistyo</h6>
                       <p>Front-End Back-End</p>
@@ -49,7 +49,7 @@ const AboutUs = {
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-2 d-flex justify-content-center">
                   <div class="card" style="width: 18rem;">
-                    <img src="/images/arvin.jpg" class="tim-image card-img-top" alt="tim image">
+                    <img src="arvin.jpg" class="tim-image card-img-top" alt="tim image">
                     <div class="card-body text-center">
                       <h6 class="fw-bold">Arvin Muhammad Ajif</h6>
                       <p>Front-End Back-End</p>
@@ -68,7 +68,7 @@ const AboutUs = {
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-2 d-flex justify-content-center">
                   <div class="card" style="width: 18rem;">
-                    <img src="/images/jana.webp" class="tim-image card-img-top" alt="tim image">
+                    <img src="jana.webp" class="tim-image card-img-top" alt="tim image">
                     <div class="card-body text-center">
                       <h6 class="fw-bold">Jana Fitria Malawat</h6>
                       <p>Front-End Back-End</p>
@@ -87,7 +87,7 @@ const AboutUs = {
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-2 d-flex justify-content-center">
                   <div class="card" style="width: 18rem;">
-                    <img src="/images/didah.jpg" class="tim-image card-img-top" alt="tim image">
+                    <img src="didah.jpg" class="tim-image card-img-top" alt="tim image">
                     <div class="card-body text-center">
                       <h6 class="fw-bold">Didah Rosyidah</h6>
                       <p>Front-End Back-End</p>
@@ -107,7 +107,7 @@ const AboutUs = {
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-2 d-flex justify-content-center">
                   <div class="card" style="width: 18rem;">
-                    <img src="/images/berli.jpg" class="tim-image card-img-top" alt="tim image">
+                    <img src="berli.jpg" class="tim-image card-img-top" alt="tim image">
                     <div class="card-body text-center">
                       <h6 class="fw-bold">Berliana</h6>
                       <p>Fullstack</p>

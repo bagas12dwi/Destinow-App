@@ -21,7 +21,7 @@ const Home = {
             </a>
           </div>
           <div class="col-lg-5">
-            <img src="/images/hero-1.jpg" alt="Hero Image" class="hero-image rounded-pill" >
+            <img src="hero-1.jpg" alt="Hero Image" class="hero-image rounded-pill" >
           </div>
         </div>
       </div>
