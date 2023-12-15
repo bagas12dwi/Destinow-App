@@ -1,71 +1,38 @@
 /* Laptop */
-@media (max-width: 1200px) {
-    .header {
-      padding: 8px 32px;
-    }
-    .hero__image {
-        width: 40%;
-        margin-bottom: 20px;
-      }
-  }
-
+@media only screen (max-width: 1200px) { 
+.list {
+  grid-template-columns: repeat(4, 1fr);
+}
+}
   
-  /* Tablet */
-  @media (max-width: 768px) {
-    html {
-      font-size: 62.5%;
-    }
-  
-    #menu {
-      display: inline-block;
-    }
-  
-    .header .navigasi {
-      position: absolute;
-      top: 100%;
-      right: 100%;
-      background-color: var(--li);
-      width: 35rem;
-      height: 100vh;
-      flex-direction: column;
-    }
+/* Tablet */
+@media only screen (max-width: 768px) {
+ .list {
+  grid-template-columns: repeat(4, 1fr);
+}
 
-    .header .navigasi .nav_daftar{
-        flex-direction: column;
-    }
+.navigasi .nav_daftar{
+  width: 50%;
+}
+}
 
-    .header .navigasi.open {
-        right: 0; /* Buka drawer ketika dibuka */
-      }
 
-    .hero {
-    flex-direction: column; 
-    }
+/* Mobile */
+@media only screen (max-width: 650px) {
+ .list {
+  grid-template-columns: repeat(3, 1fr);
+}
 
-    .hero__image {
-    width: 70%; 
-    margin: 0 auto;
-    }
+.navbar-extra button {
+  display: none;
+}
 
-    .hero__content {
-    text-align: center;
-    margin: 20px; 
-    }
-  }
-  
-  /* Mobile */
-  @media (max-width: 450px) {
-    html {
-      font-size: 50%;
-    }
+.navigasi {
+  grid-template-columns: 1fr auto;
+  padding: 8px 32px;
+}
 
-    .hero__image {
-        width: 90%; 
-        margin: 0 auto; 
-      }
-    
-      .hero__content {
-        text-align: center;
-        margin: 20px; 
-      }
-  }
+.navigasi .nav_daftar {
+  display:inline-block
+}
+}

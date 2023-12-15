@@ -1,7 +1,9 @@
+/* eslint-disable import/extensions */
 import 'regenerator-runtime';
 import '../styles/style.css';
 import '../styles/responsive.css';
 import App from './views/app';
+// eslint-disable-next-line import/no-unresolved
 
 // eslint-disable-next-line no-unused-vars
 document.addEventListener('DOMContentLoaded', () => {
